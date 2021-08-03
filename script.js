@@ -1,20 +1,27 @@
-/* 
-step 1 : Write a JavaScript function that accepts a string as a parameter
-step 2 : declare a variable with a list of all the vowels both in uppercase and lowwercase.
-step 3: write a function that splits the sentence/string into individual letters
-step 4: create a loop that "filters" every word in the string and if == to a vowel to count up
+/*write a JavaScript function that accepts a string as a parameter
+ and counts the number of vowels within the string.
+ step 1 : declare a constant with an array of vowels both in both caps and 
+ lowercase letters ie will be 10 in total
+ step 2 declare a function "getVowelCount(l)" with condition within
+  the curly braces that splits l into indidvidual letters and then use the
+   .includes to count if vowels are found
+  
+ */
 
-and then commit to github
-*/
 
-const vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o','U','u']
-
-         function getVowelCount(i) {
-           let indLetters = i.split('') 
-             
-           
-           return indLetters.filter(indLetter => vowels.includes(indLetter)).length
+   const str = 'The reason I love to code';
+   const vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'];
    
-         }
-         
-         console.log(getVowelCount('I love to code'));
+   function getVowelCount(str) {
+     var letters = str.split('');
+     let count = 0;
+     for(var i = 0; i < str.length; i++) { 
+     if (letters[i].includes(vowels))  
+       return  count++ ;
+   }
+  
+   
+   }
+   
+     console.log(getVowelCount('The reason I love to code'));
+   
