@@ -9,7 +9,7 @@
  */
 
 
-   const str = 'The reason I love to code';
+  
    const vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'];
    
    function getVowelCount(str) {
